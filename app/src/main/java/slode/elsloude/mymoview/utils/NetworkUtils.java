@@ -19,12 +19,12 @@ public class NetworkUtils {
     private static final String BASE_URL = "https://api.themoviedb.org/3/discover/movie";
 
     private static final String PARAMS_API_KEY = "api_key";
-    private static final String PARAMS_LENGUAGE = "lenguage"; //параметр языка
+    private static final String PARAMS_LANGUAGE = "language"; //параметр языка
     private static final String PARAMS_SORT_BY = "sort_by"; //параметр для сортировки
-    private static final String PARAMS_PAGE = "page";
+    private static final String PARAMS_PAGE = "page"; //страница
 
     private static final String API_KEY = "c11290ad6bbebdfb83a3e221520bceeb";
-    private static final String LANGEUAGE_VALUE = "ru-RU"; //ключ языка
+    private static final String LANGEUAGE_VALUE = "ru-RU"; //ключ языка ?????????
     private static final String SORT_BY_POPULARITY = "popularity.desc"; //клю сортировки по популярности
     private static final String SORT_BY_TOP_RATED = "vote_average.desc"; //ключ сортировки по рейтинговости фильма
 
@@ -41,7 +41,7 @@ public class NetworkUtils {
         }
         Uri uri = Uri.parse(BASE_URL).buildUpon()
                 .appendQueryParameter(PARAMS_API_KEY, API_KEY)
-                .appendQueryParameter(PARAMS_LENGUAGE, LANGEUAGE_VALUE)
+                .appendQueryParameter(PARAMS_LANGUAGE, LANGEUAGE_VALUE)
                 .appendQueryParameter(PARAMS_SORT_BY, methodOfSort)
                 .appendQueryParameter(PARAMS_PAGE, Integer.toString(page))
                 .build();
