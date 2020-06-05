@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyMoview</string>
+    <string name="app_name">Posters</string>
     <string name="poster_of_movie">Постер к фильму</string>
     <string name="most_popular">Самые популярные</string>
     <string name="most_rated">Наиболее рейтинговые</string>
