@@ -127,6 +127,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         });
     }
 
+
     public void onClickSetPopularity(View view) {
         setMethodOfSort(false);
         switchSort.setChecked(false);
